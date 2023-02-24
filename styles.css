@@ -16,11 +16,10 @@ body {
 .left-side {
     display: flex;
     position: relative;
-
 }
 
 .logo {
-    width: 30%;
+    width: 80px;
 }
 
 .behind-logo {
@@ -33,14 +32,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: xxx-large;
+    flex-direction: column;
+    font-size: xx-large;
     font-family: norse-bold, sans-serif;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 3% 0 3% 0;
 }
 
-.background {
-    height: 100vh;
+.logo-text {
+    white-space: nowrap;
 }
 
+.background {
+    height: 100vh;
+    object-fit: cover;
+    width: min(calc(80vw - 600px), 20vw);*/
+}
+
+.right-side {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
