@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.left-side, .right-side {
+    height: 100vh;
+}
+
+.background {
+    height: 100vh;
+    width: auto;
+}
