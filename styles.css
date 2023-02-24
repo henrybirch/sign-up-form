@@ -3,20 +3,28 @@
     src: url("assets/Norse-Bold.otf")
 }
 
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    border: 0;
+}
+
 body {
     margin: 0;
     padding: 0;
     display: flex;
-}
-
-.left-side, .right-side {
     height: 100vh;
 }
 
-.left-side {
-    display: flex;
-    position: relative;
+.left-side, .right-side {
+    height: 100%;
 }
+
+.left-side {
+    position: relative;
+    display: inline-block;
+}
+
 
 .logo {
     width: 80px;
@@ -33,7 +41,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: xx-large;
+    font-size: 3vw;
     font-family: norse-bold, sans-serif;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
@@ -45,14 +53,41 @@ body {
 }
 
 .background {
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
-    width: min(calc(80vw - 600px), 20vw);*/
+    width: 30vw;
+    padding: 0;
+    margin: 0;
 }
 
 .right-side {
-    width: 100%;
+    display: inline-block;
+}
+
+.right-side > * {
+    display: inline-block;
+}
+
+.top-text {
+    margin-top: 15vh;
+    margin-right: 25vw;
+    margin-left: 3vw;
+    font-weight: 500;
+    text-overflow: initial;
+    font-size: large;
+}
+
+.create-account {
+    margin-bottom: 15vh;
+}
+
+.create-account-form {
+    margin-left: 3vw;
+    display: grid;
+}
+
+.label-input {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin: 5% 5% 5% 0%;
 }
