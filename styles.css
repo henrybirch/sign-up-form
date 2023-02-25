@@ -101,6 +101,18 @@ body {
     width: 19rem;
 }
 
+input:valid {
+    border: medium solid green;
+}
+
+input:invalid {
+    border: medium solid red;
+}
+
+input:empty {
+    border: medium solid grey;
+}
+
 .label-input.fname {
     grid-column: 1;
     grid-row: 1;
