@@ -33,7 +33,7 @@ body {
 .behind-logo {
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -72,22 +72,78 @@ body {
     margin-top: 15vh;
     margin-right: 25vw;
     margin-left: 3vw;
-    font-weight: 500;
+    font-weight: 700;
     text-overflow: initial;
     font-size: large;
+    min-width: 35ch;
 }
 
 .create-account {
-    margin-bottom: 15vh;
+    background-color: wheat;
+}
+
+.form {
+    width: 100%;
 }
 
 .create-account-form {
-    margin-left: 3vw;
-    display: grid;
+    background-color: lightgray;
+    display: inline-grid;
+    width: 100%;
+    padding: 5vh 35% 5vh 3vw;
+    row-gap: 5vh;
+    column-gap: 5vw;
 }
 
 .label-input {
     display: flex;
     flex-direction: column;
-    margin: 5% 5% 5% 0%;
+    font-size: large;
+    width: 19rem;
+}
+
+.label-input.fname {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.label-input.lname {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.label-input.email {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.label-input.phone-number {
+    grid-column: 2;
+    grid-row: 2
+}
+
+.label-input.password {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.label-input.confirm-password {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.create-account-sub-section {
+    font-size: large;
+}
+
+.create-account-button {
+    padding: 2% 10% 2% 10%;
+    margin-bottom: 5%;
+    font-size: large;
+}
+
+.log-in-button {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
 }
