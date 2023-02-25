@@ -25,32 +25,35 @@
         <form action="" class="create-account-form">
             <div class="label-input fname">
                 <label for="fname">First Name</label>
-                <input id="fname" type="text">
+                <input id="fname" type="text" required>
             </div>
             <div class="label-input lname">
                 <label for="lname">Last Name</label>
-                <input id="lname" type="text">
+                <input id="lname" type="text" required>
             </div>
             <div class="label-input email">
                 <label for="email">Email</label>
-                <input id="email" type="email">
+                <input id="email" type="email" required>
             </div>
             <div class="label-input phone-number">
                 <label for="phone-number">Phone Number</label>
-                <input id="phone-number" type="tel">
+                <input id="phone-number" type="tel" required>
             </div>
             <div class="label-input password">
                 <label for="password">Password</label>
-                <input id="password" type="password">
+                <input id="password" type="password" required>
             </div>
             <div class="label-input confirm-password">
                 <label for="confirm-password">Confirm Password</label>
-                <input id="confirm-password" type="password">
+                <input id="confirm-password" type="password" required onchange="onChange()">
+            </div>
+            <div class="create-account-sub-section">
+                <button type="submit" class="create-account-button">Create Account</button>
+                <br>Already have an account? <a href="" class="log-in-button">Log in</a>
             </div>
         </form>
     </div>
-    <div class="create-account-sub-section">
-    </div>
+
 </div>
 </body>
 </html>
