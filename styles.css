@@ -50,6 +50,8 @@ body {
 
 .logo-text {
     white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .background {
